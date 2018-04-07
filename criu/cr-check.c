@@ -50,6 +50,16 @@
 #include "libnetlink.h"
 #include "net.h"
 
+#include "syscall-codes.h"
+
+#ifndef PR_SET_MM_EXE_FILE
+# define PR_SET_MM_EXE_FILE             13
+#endif
+
+#ifndef PR_SET_MM_AUXV
+# define PR_SET_MM_AUXV                 12
+#endif
+
 static char *feature_name(int (*func)());
 
 static int check_tty(void)

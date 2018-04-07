@@ -6,6 +6,8 @@
 #include "util.h"
 #include "kcmp-ids.h"
 
+#include "syscall-codes.h"
+
 /*
  * We track shared files by global rbtree, where each node might
  * be a root for subtree. The reason for that is the nature of data

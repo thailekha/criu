@@ -13,6 +13,8 @@
 #include "rst-malloc.h"
 #include "log.h"
 
+#include "util-pie.h"
+
 static struct fdstore_desc {
 	int next_id;
 	mutex_t lock; /* to protect a peek offset */
